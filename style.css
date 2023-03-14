@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+main{
+    max-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 10px;
+    background: #fff;
+}
+
+#sec1{
+    width: 100%;
+}
+
+#img-mobile{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#img-desktop{
+    display: none;
+}
+
+#sec2{
+    padding: 5%;
+}
+
+#sec2 > *{
+    margin-bottom: 1rem;
+}
+
+#perfume{
+    letter-spacing: 5px;
+}
+
+#h1{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 1.5rem;
+    line-height: 25px;
+}
+
+#prices{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#new-price{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+
+#old-price{
+    margin: auto 0;
+    text-decoration: line-through;
+}
+
+.price{
+    display: inline;
+}
+
+#btn{
+    margin-bottom: 0;
+    padding: .8rem;
+    text-align: center;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: hsl(158, 36%, 29%);
+}
+
+#btn img{
+    margin: auto 0;
+    margin-right: 4px;
+}
+
+#btn p{
+    margin-right: 4px;
+}
+
+@media only screen and (min-width: 515px) {
+    
+    main{
+        flex-direction: row;
+        max-width: 595px;
+    }
+
+    #img-mobile{
+        display: none;
+    }
+
+    #img-desktop{
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #sec1{
+        width: 50%;
+    }
+
+    #sec2{
+        padding: 0;
+        margin: 1rem;
+        width: 50%;
+    }
+
+    #old-price{
+        padding-left: 5px;
+    }
+}
